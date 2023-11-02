@@ -20,7 +20,7 @@ module.exports = {
       }),
       fontFamily: {
         "dmsans": ["DM Sans", "sans-serif"],
-        "monsterrat": ["Monsterrat", "serif"]
+        "montserrat": ["Montserrat", "serif"]
       },
       content: {
         evolvetext: "url('./assetsEvolveText.png')",
