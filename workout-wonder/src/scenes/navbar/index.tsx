@@ -27,6 +27,7 @@ const Navbar = (props: Props) => {
                         </div>
                     </div>
                         <p>Sign In</p>
+                        <button>Become a Member</button>
 
                 </div>
             </div>
