@@ -6,7 +6,7 @@ type Props = {}
 
 const Navbar = (props: Props) => {
     //apply tailwind css classes
-    const flexBetween = "flex items-center justify-between" 
+    const flexBetween = "flex items-center justify-between"; 
     
     return <nav>
         {/* outer div */}
@@ -19,16 +19,18 @@ const Navbar = (props: Props) => {
 
                     {/* right side of navbar */}
                     <div className={`${flexBetween} w-full`}>
-                        <div className={`${flexBetween}gap-8 text-sm`}>
+                        <div className={`${flexBetween} gap-8 text-sm`}>
                             <p>Home</p>
                             <p>Benefits</p>
                             <p>Our Classes</p>
                             <p>Contact Us</p>
                         </div>
+        
+                        <div className={`${flexBetween} gap-8`}>
+                            <p>Sign In</p>
+                            <button>Become a Member</button>
+                        </div>
                     </div>
-                        <p>Sign In</p>
-                        <button>Become a Member</button>
-
                 </div>
             </div>
         </div>
