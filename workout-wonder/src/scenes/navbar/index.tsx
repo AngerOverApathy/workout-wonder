@@ -5,11 +5,13 @@ import Logo from "@/assets/Logo.png"
 type Props = {}
 
 const Navbar = (props: Props) => {
-    //
-    const flexBetween = "flex items-center justify-between"  
-    return (
-    <div>Navbar</div>
-    )
+    //apply tailwind css classes
+    const flexBetween = "flex items-center justify-between" 
+    
+    return <nav>
+        <div className={`${flexBetween} fixed top-0 z-30 w-full py-6`}>
+        </div>
+    </nav>
 }
 
 export default Navbar;
