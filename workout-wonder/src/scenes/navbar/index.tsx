@@ -20,10 +20,26 @@ const Navbar = (props: Props) => {
                     {/* right side of navbar */}
                     <div className={`${flexBetween} w-full`}>
                         <div className={`${flexBetween} gap-8 text-sm`}>
-                            <Link page = "Home" />
-                            <Link page = "Benefits" />
-                            <Link page = "Our Classes" />
-                            <Link page = "Contact Us" />
+                            <Link 
+                            page = "Home" 
+                            selectedPage={selectedPage} 
+                            setSelectedPage={setSelectedPage}
+                            />
+                            <Link 
+                            page = "Benefits" 
+                            selectedPage={selectedPage} 
+                            setSelectedPage={setSelectedPage}
+                            />
+                            <Link 
+                            page = "Our Classes" 
+                            selectedPage={selectedPage} 
+                            setSelectedPage={setSelectedPage}
+                            />
+                            <Link 
+                            page = "Contact Us" 
+                            selectedPage={selectedPage} 
+                            setSelectedPage={setSelectedPage}
+                            />
                         </div>
         
                         <div className={`${flexBetween} gap-8`}>
