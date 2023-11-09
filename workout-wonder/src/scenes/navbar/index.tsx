@@ -5,8 +5,6 @@ import Link from './Link';
 import { SelectedPage } from '@/shared/types';
 import useMediaQuery from '@/hooks/useMediaQuery';
 
-kdsnjfkdjlks
-
 type Props = {
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void; 
