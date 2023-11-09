@@ -7,19 +7,21 @@ import useMediaQuery from '@/hooks/useMediaQuery';
 import ActionButton from '@/shared/ActionButton';
 
 type Props = {
+    isTopOfPage: boolean;
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void; 
 }
 
-const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
     //apply tailwind css classes
     const flexBetween = "flex items-center justify-between"; 
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false)
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
+    const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow"
     
     return <nav>
         {/* outer div */}
-        <div className={`${flexBetween} fixed top-0 z-30 w-full py-6`}>
+        <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
             {/* inner div for layout, 5/6 = 83% of width */}
             <div className={`${flexBetween} mx-auto w-5/6`}>
                 <div className={`${flexBetween} w-full gap-16`}>
@@ -78,7 +80,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                         <XMarkIcon className='h-6 w-6 text-gray-400' />
                     </button>
                     {/*MENU ITEMS*/}
-                    <div className={"ml-[33%] flex flex-row gap-10 text-2xl"}>
+                    <div className={"ml-[33%] flex flex-col gap-10 text-2l"}>
                             <Link 
                             page = "Home" 
                             selectedPage={selectedPage} 
