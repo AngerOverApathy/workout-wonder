@@ -44,15 +44,31 @@ const Home = ({ setSelectedPage }: Props) => {
                         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
                         href={`#${SelectedPage.ContactUs}`}
                     >
-
+                        <p>Learn More</p>
                     </AnchorLink>
                 </div>
             </div>
 
             {/* IMAGE */}
-            <div></div>
+            <div>
+                <img alt="home-pageGraphic" src={HomePageGraphic} />
+            </div>
         </div>
         
+        {/* SPONSORS */}
+        {isAboveMediumScreens && (
+            <div>
+                <div>
+                    <div>
+                        <img alt='redbull-sponsor' src={SponsorRedBull} />
+                        <img alt='forbes-sponsor' src={SponsorForbes} />
+                        <img alt='fortune-sponsor' src={SponsorFortune} />
+                    </div>
+                </div>
+            </div>
+
+        )
+    }
     </section>
 }
 
