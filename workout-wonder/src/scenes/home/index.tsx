@@ -6,6 +6,7 @@ import HomePageGraphic from '@/assets/HomePageGraphic.png'
 import SponsorRedBull from '@/assets/RedBull.png'
 import SponsorForbes from '@/assets/SponsorForbes.png'
 import SponsorFortune from '@/assets/SponsorFortune.png'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 type Props = {
@@ -28,8 +29,26 @@ const Home = ({ setSelectedPage }: Props) => {
                     <div>
                         <img alt="home-page-text" src={HomePageText} />
                     </div>
+                    <p>
+                    Welcome to Atlas Athletic Training Gym, your ultimate destination for fitness and performance excellence. At Atlas, we're not just a gym; we're a community committed to helping you unlock your potential and achieve your fitness dreams.
+                    </p>
+                </div>
+
+                {/* ACTIONS */}
+                <div>
+                    <ActionButton setSelectedPage={setSelectedPage}>
+                        Join Now
+                    </ActionButton>
+                    <AnchorLink
+                        className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
+                        onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+                        href={`#${SelectedPage.ContactUs}`}
+                    >
+
+                    </AnchorLink>
                 </div>
             </div>
+
             {/* IMAGE */}
             <div></div>
         </div>
