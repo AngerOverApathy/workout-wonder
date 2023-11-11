@@ -19,6 +19,20 @@ const Home = ({ setSelectedPage }: Props) => {
         id='home'
         className='gap-16 bg-gray-20 pb-10 py-10 md:h-full md:pb-0'
     >
+        {/* IMAGE AND MAIN HEADER */}
+        <div>
+            {/* MAIN HEADER */}
+            <div>
+                {/* HEADER */}
+                <div>
+                    <div>
+                        <img alt="home-page-text" src={HomePageText} />
+                    </div>
+                </div>
+            </div>
+            {/* IMAGE */}
+            <div></div>
+        </div>
         
     </section>
 }
