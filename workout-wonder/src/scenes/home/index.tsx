@@ -17,7 +17,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
     return <section
         id='home'
-        className='gap-16 bg-gray=20 pb-10 py-10 md:h-full'
+        className='gap-16 bg-gray-20 pb-10 py-10 md:h-full md:pb-0'
     >
         
     </section>
