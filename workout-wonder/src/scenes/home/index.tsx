@@ -3,7 +3,7 @@ import useMediaQuery from '@/hooks/useMediaQuery';
 import ActionButton from '@/shared/ActionButton';
 import HomePageText from '@/assets/HomePageText.png'
 import HomePageGraphic from '@/assets/HomePageGraphic.png'
-import SponsorRedBull from '@/assets/RedBull.png'
+import SponsorRedBull from '@/assets/SponsorRedBull.png'
 import SponsorForbes from '@/assets/SponsorForbes.png'
 import SponsorFortune from '@/assets/SponsorFortune.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -51,7 +51,6 @@ const Home = ({ setSelectedPage }: Props) => {
                 {/* ACTIONS */}
                 <motion.div 
                     className='mt-8 flex items-center gap-8'
-                    className='md:-mt-20'
                     initial='hidden'
                     whileInView='visible'
                     viewport={{ once: true, amount: 0.5 }}
