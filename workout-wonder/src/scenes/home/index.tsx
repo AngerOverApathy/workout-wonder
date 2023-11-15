@@ -27,7 +27,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 {/* HEADER */}
                 <div className='md:-mt-20'>
                     <div className='relative'>
-                        <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] before:content-evolvetext'>
+                        <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
                             <img alt="home-page-text" src={HomePageText} />
                         </div>
                     </div>
@@ -59,9 +59,9 @@ const Home = ({ setSelectedPage }: Props) => {
         
         {/* SPONSORS */}
         {isAboveMediumScreens && (
-            <div>
-                <div>
-                    <div>
+            <div className='h-[150px] w-full bg-primary-100 py-10'>
+                <div className='mx-auto w-5/6'>
+                    <div className='flex w-3/5 items-center justify-between gap-8'>
                         <img alt='redbull-sponsor' src={SponsorRedBull} />
                         <img alt='forbes-sponsor' src={SponsorForbes} />
                         <img alt='fortune-sponsor' src={SponsorFortune} />
