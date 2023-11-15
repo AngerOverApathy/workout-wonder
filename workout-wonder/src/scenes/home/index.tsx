@@ -27,17 +27,17 @@ const Home = ({ setSelectedPage }: Props) => {
                 {/* HEADER */}
                 <div className='md:-mt-20'>
                     <div className='relative'>
-                        <div className='before:absolute before:-top-20 before:content-evolvetext'>
+                        <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] before:content-evolvetext'>
                             <img alt="home-page-text" src={HomePageText} />
                         </div>
                     </div>
-                    <p>
+                    <p className='mt-8 text-sm'>
                     Welcome to Atlas Athletic Training Gym, your ultimate destination for fitness and performance excellence. At Atlas, we're not just a gym; we're a community committed to helping you unlock your potential and achieve your fitness dreams.
                     </p>
                 </div>
 
                 {/* ACTIONS */}
-                <div>
+                <div className='mt-8 flex items-center gap-8'>
                     <ActionButton setSelectedPage={setSelectedPage}>
                         Join Now
                     </ActionButton>
@@ -52,7 +52,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
 
             {/* IMAGE */}
-            <div>
+            <div className='flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end'>
                 <img alt="home-pageGraphic" src={HomePageGraphic} />
             </div>
         </div>
