@@ -52,6 +52,7 @@ const Benefits = ({setSelectedPage}: Props) => {
                         icon={benefit.icon}
                         title={benefit.title}
                         description={benefit.description}
+                        setSelectedPage={setSelectedPage}
                     />
                 ))}
             </div>

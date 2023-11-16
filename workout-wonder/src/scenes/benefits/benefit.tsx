@@ -1,0 +1,22 @@
+import { SelectedPage } from "@/shared/types"
+
+type Props = {
+    icon: JSX.Element
+    title: string
+    description: string
+    setSelectedPage: (value: SelectedPage) => void
+}
+
+function Benefit({ icon, title, description, setSelectedPage }: Props) {
+  return (
+    <div className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center">
+        <div className="mb-4 flex justify-center">
+            <div className="rounded-full border-2 border-gray-100 bg-primary-100 p4">
+                {icon}
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Benefit
