@@ -6,7 +6,7 @@ import {
     UserGroupIcon,
     AcademicCapIcon
  } from "@heroicons/react/24/solid"
-import Benefit from "./benefit";
+import Benefit from "./Benefit";
 import ActionButton from "@/shared/ActionButton";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 
