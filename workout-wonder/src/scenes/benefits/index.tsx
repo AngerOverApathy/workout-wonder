@@ -97,17 +97,37 @@ const Benefits = ({setSelectedPage}: Props) => {
                     {/* TITLE */}
                     <div className="relative">
                         <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
-                            <div>
+                            <motion.div
+                                className="md:my-5 text-sm"
+                                initial='hidden'
+                                whileInView='visible'
+                                viewport={{ once: true, amount: 0.5 }}
+                                transition={{ duration: 0.5 }}
+                                variants={{
+                                    hidden: { opacity: 0, x: 50 },
+                                    visible: { opacity: 1, x: 0 }
+                                }}
+                            >
                                 <HText>
                                     MILLIONS OF HAPPY MEMBERS GETTING {" "}
                                     <span className="text-primary-500">FIT</span>
                                 </HText>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
 
                     {/* DESCRIPT */}
-                    <div>
+                    <motion.div
+                        className="md:my-5 text-sm"
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, x: -50 },
+                            visible: { opacity: 1, x: 0 }
+                        }}
+                    >
                         <p className="my-5">
                         At Atlas Athletics, we proudly stand as the premier destination for fitness enthusiasts in our community. 
                         What sets us apart and makes us the best choice is our unwavering commitment to your fitness journey. 
@@ -120,7 +140,7 @@ const Benefits = ({setSelectedPage}: Props) => {
                         We're united by a common goal: achieving our fitness ambitions while enjoying the journey together.
                         Your success is our priority, and we invite you to join us on this exciting fitness journey. Come experience the Atlas Athletics difference today!
                         </p>
-                    </div>
+                    </motion.div>
 
                     {/* BUTTON */}
                     <div className="relative mt-16">
