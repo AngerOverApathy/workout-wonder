@@ -42,7 +42,7 @@ const Benefits = ({setSelectedPage}: Props) => {
     <section id='benefits' className='mx-auto min-h-full w-5/6 py-20'>
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
             
-            {/* Header */}
+            {/* HEADING */}
             <motion.div 
                 className="md:my-5 text-sm"
                 initial='hidden'
@@ -62,7 +62,7 @@ const Benefits = ({setSelectedPage}: Props) => {
                 </p>
             </motion.div>
 
-            {/* Benefits */}
+            {/* BENEFITS */}
             <motion.div 
                 className="md:flex items-center justify-between gap-8 mt-5"
                 initial="hidden"
@@ -80,6 +80,26 @@ const Benefits = ({setSelectedPage}: Props) => {
                     />
                 ))}
             </motion.div>
+
+            {/* GRAPHICS AND DESCRIPTION */}
+            <div>
+                {/* GRAPHIC */}
+                <img />
+
+                {/* DESCRIPTION */}
+                <div>
+                    {/* TITLE */}
+                    <div className="relative">
+                        <div className="before: absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+
+                        </div>
+                    </div>
+
+                    {/* DESCRIPT */}
+
+                    {/* BUTTON */}
+                </div>
+            </div>
         </motion.div>
     </section>
   )
