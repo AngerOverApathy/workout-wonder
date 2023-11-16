@@ -43,14 +43,24 @@ const Benefits = ({setSelectedPage}: Props) => {
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
             
             {/* Header */}
-            <div className="md:my-5 text-sm">
+            <motion.div 
+                className="md:my-5 text-sm"
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+            >
                 <HText>MORE THAN JUST A GYM</HText>
                 <p className="my-5 text-sm">
                 At our fitness center, we're more than just a gym; we're a vibrant community dedicated to transforming lives. 
                 We believe in empowering individuals to achieve their fitness goals while fostering a supportive and inclusive environment. 
                 Join us on a journey towards a healthier, happier you, where every step is celebrated, and success is shared among friends.
                 </p>
-            </div>
+            </motion.div>
 
             {/* Benefits */}
             <motion.div 
