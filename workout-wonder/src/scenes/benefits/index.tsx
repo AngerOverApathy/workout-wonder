@@ -91,11 +91,30 @@ const Benefits = ({setSelectedPage}: Props) => {
                     {/* TITLE */}
                     <div className="relative">
                         <div className="before: absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
-
+                            <div>
+                                <HText>
+                                    MILLIONS OF HAPPY MEMBERS GETTING {" "}
+                                    <span className="text-primary-500">FIT</span>
+                                </HText>
+                            </div>
                         </div>
                     </div>
 
                     {/* DESCRIPT */}
+                    <div>
+                        <p>
+                        At Atlas Athletics, we proudly stand as the premier destination for fitness enthusiasts in our community. 
+                        What sets us apart and makes us the best choice is our unwavering commitment to your fitness journey. 
+                        Our expansive and meticulously maintained facility boasts an impressive array of state-of-the-art equipment, ensuring that you have access to the tools you need to succeed. 
+                        Our passionate and highly experienced trainers are here to guide and motivate you, providing personalized support every step of the way.  
+                        </p>
+                        <p>
+                        What truly sets Atlas Athletics apart is our sense of community. 
+                        We're more than just a gym; we're a fitness family. Our supportive and welcoming atmosphere makes every member feel like they belong. 
+                        We're united by a common goal: achieving our fitness ambitions while enjoying the journey together.
+                        Your success is our priority, and we invite you to join us on this exciting fitness journey. Come experience the Atlas Athletics difference today!
+                        </p>
+                    </div>
 
                     {/* BUTTON */}
                 </div>
