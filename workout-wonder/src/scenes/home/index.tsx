@@ -45,7 +45,7 @@ const Home = ({ setSelectedPage }: Props) => {
                             </div>
                         </div>
                         <p className='mt-8 text-sm'>
-                        Welcome to Atlas Athletic Training Gym, your ultimate destination for fitness and performance excellence. At Atlas, we're not just a gym; we're a community committed to helping you unlock your potential and achieve your fitness dreams.
+                        Welcome to Atlas Athletics, your ultimate destination for fitness and performance excellence. At Atlas, we're not just a gym; we're a community committed to helping you unlock your potential and achieve your fitness dreams.
                         </p>
                     </motion.div>
 
