@@ -7,6 +7,7 @@ import {
     AcademicCapIcon
  } from "@heroicons/react/24/solid"
 import Benefit from "./benefit";
+import ActionButton from "@/shared/ActionButton";
 
 const benefits: Array<BenefitType> = [
     {
@@ -84,13 +85,16 @@ const Benefits = ({setSelectedPage}: Props) => {
             {/* GRAPHICS AND DESCRIPTION */}
             <div>
                 {/* GRAPHIC */}
-                <img />
+                <img 
+                    className="mx-auto"
+                    alt="benefits-graphic"
+                    />
 
                 {/* DESCRIPTION */}
                 <div>
                     {/* TITLE */}
                     <div className="relative">
-                        <div className="before: absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+                        <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
                             <div>
                                 <HText>
                                     MILLIONS OF HAPPY MEMBERS GETTING {" "}
@@ -102,13 +106,13 @@ const Benefits = ({setSelectedPage}: Props) => {
 
                     {/* DESCRIPT */}
                     <div>
-                        <p>
+                        <p className="my-5">
                         At Atlas Athletics, we proudly stand as the premier destination for fitness enthusiasts in our community. 
                         What sets us apart and makes us the best choice is our unwavering commitment to your fitness journey. 
                         Our expansive and meticulously maintained facility boasts an impressive array of state-of-the-art equipment, ensuring that you have access to the tools you need to succeed. 
                         Our passionate and highly experienced trainers are here to guide and motivate you, providing personalized support every step of the way.  
                         </p>
-                        <p>
+                        <p className="mb-5">
                         What truly sets Atlas Athletics apart is our sense of community. 
                         We're more than just a gym; we're a fitness family. Our supportive and welcoming atmosphere makes every member feel like they belong. 
                         We're united by a common goal: achieving our fitness ambitions while enjoying the journey together.
@@ -117,6 +121,13 @@ const Benefits = ({setSelectedPage}: Props) => {
                     </div>
 
                     {/* BUTTON */}
+                    <div className="relative mt-16">
+                        <div className="before:absolute before:-bottom-20 before:right-40 before:z-[1] before:content-sparkles">
+                            <ActionButton setSelectedPage={setSelectedPage}>
+                                Join Now
+                            </ActionButton>
+                        </div>
+                    </div>
                 </div>
             </div>
         </motion.div>
