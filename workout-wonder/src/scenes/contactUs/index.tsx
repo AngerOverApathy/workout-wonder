@@ -87,6 +87,39 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                                     {errors.name.type === 'maxLength' && 'Name cannot exceed 100 characters'}
                                 </p>
                             )}
+
+                            <input
+                                className={inputStyles}
+                                type='text'
+                                placeholder='EMAIL'
+                                {...register('email', { 
+                                    required: true,
+                                    pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+                                })}   
+                            />
+                            {errors.email && (
+                                <p className='mt-1 text-primary-500'>
+                                    {errors.email.type === 'required' && 'This field is required'}
+                                    {errors.email.type === 'pattern' && 'Invalid email'}
+                                </p>
+                            )}
+
+                            <input
+                                className={inputStyles}
+                                type='text'
+                                placeholder='MESSAGE'
+                                {...register('message', { 
+                                    required: true,
+                                    maxLength: 2000,
+                                })}   
+                            />
+                            {errors.message && (
+                                <p className='mt-1 text-primary-500'>
+                                    {errors.message.type === 'required' && 'This field is required'}
+                                    {errors.message.type === 'pattern' && 'Max length is 2000 characters'}
+                                </p>
+                            )}
+
                         </form>
                     </motion.div>
                 </div>
