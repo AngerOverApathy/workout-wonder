@@ -11,7 +11,7 @@ type Props = {
 const ContactUs = ({ setSelectedPage }: Props) => {
 
     const inputStyles = `
-    className='w-full rounded-lg bg-primary-300 
+    w-full rounded-lg bg-primary-300 
     px-5 py-3 placeholder-white
     `
 
@@ -119,6 +119,13 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                                     {errors.message.type === 'pattern' && 'Max length is 2000 characters'}
                                 </p>
                             )}
+
+                            <button
+                            type='submit'
+                            className='mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white'
+                            >
+                                SUBMIT
+                            </button>
 
                         </form>
                     </motion.div>
